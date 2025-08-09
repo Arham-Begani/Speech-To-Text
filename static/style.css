@@ -32,10 +32,10 @@ body {
      color: yellow; animation: blink 1s infinite; 
 }
 
-.status.idle {
-     color: lightgray; 
+.status.success {
+     color: #00ff99; 
 }
 
-.status.listening {
-     color: yellow; animation: blink 1s infinite; 
+.status.error {
+     color: #ff4d4d; 
 }
