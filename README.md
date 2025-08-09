@@ -20,10 +20,10 @@ It listens to your speech through the microphone, converts it into text, and dis
 
 You need the following Python packages: <br>
 
-** pip install flask ** <br>
-** pip install SpeechRecognition ** <br>
-** pip install pyttsx3 ** <br>
-** pip install pyaudio ** <br>
+**pip install flask** <br>
+**pip install SpeechRecognition** <br>
+**pip install pyttsx3** <br>
+**pip install pyaudio** <br>
 
 ## Project Structure
 
