@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
 import speech_recognition as sr
+import time
 
 app = Flask(__name__)
 r = sr.Recognizer()

@@ -5,11 +5,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Voice to Text</h1>
-    <div id="status">Idle</div>
-    <button onclick="startListening()">Start Listening</button>
-    <div id="result"></div>
+    <div class="container">
+        <h1>Voice to Text</h1>
+        <p id="status" class="status idle">Idle</p>
+        
+        <button id="mic-btn" onclick="startListening()">
+            🎤
+        </button>
 
+        <div id="result-list" class="result-box"></div>
+    </div>
+    
     <script>
         let results = [];
 
@@ -51,6 +57,5 @@
             list.scrollTop = list.scrollHeight;
         }
     </script>
-    
 </body>
 </html>
