@@ -79,3 +79,13 @@ body {
          box-shadow: 0 0 10px rgba(255,77,77,0.6); 
     }
 }
+
+.result-box {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
