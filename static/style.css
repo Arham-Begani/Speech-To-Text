@@ -45,3 +45,23 @@ body {
         opacity: 0.5; 
     } 
 }
+
+#mic-btn {
+    font-size: 2em;
+    background: #ff4d4d;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(255, 77, 77, 0.6);
+    transition: all 0.3s ease;
+}
+
+#mic-btn:hover { 
+    background: #ff3333; 
+}
+
+#mic-btn.active {
+     animation: pulse 1s infinite; 
+}
