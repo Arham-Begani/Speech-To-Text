@@ -31,3 +31,11 @@ body {
 .status.listening {
      color: yellow; animation: blink 1s infinite; 
 }
+
+.status.idle {
+     color: lightgray; 
+}
+
+.status.listening {
+     color: yellow; animation: blink 1s infinite; 
+}
