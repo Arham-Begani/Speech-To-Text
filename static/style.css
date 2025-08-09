@@ -39,3 +39,9 @@ body {
 .status.error {
      color: #ff4d4d; 
 }
+
+@keyframes blink {
+     50% { 
+        opacity: 0.5; 
+    } 
+}
