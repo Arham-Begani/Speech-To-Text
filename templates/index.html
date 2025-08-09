@@ -17,6 +17,9 @@
             const statusEl = document.getElementById("status");
             const micBtn = document.getElementById("mic-btn");
 
+            statusEl.innerText = "Listening...";
+            statusEl.className = "status listening";
+            micBtn.classList.add("active");
 
             fetch("/listen")
                 .then(res => res.json())
