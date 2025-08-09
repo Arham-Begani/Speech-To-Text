@@ -27,4 +27,4 @@ def listen():
         return jsonify({"status": "error", "text": f"Request error: {e}"})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
