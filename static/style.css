@@ -65,3 +65,17 @@ body {
 #mic-btn.active {
      animation: pulse 1s infinite; 
 }
+
+@keyframes pulse {
+    0% {
+         box-shadow: 0 0 10px rgba(255,77,77,0.6); 
+    }
+    
+    50% {
+         box-shadow: 0 0 30px rgba(255,77,77,1); 
+    }
+
+    100% {
+         box-shadow: 0 0 10px rgba(255,77,77,0.6); 
+    }
+}
