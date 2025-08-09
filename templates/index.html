@@ -10,6 +10,44 @@
     <button onclick="startListening()">Start Listening</button>
     <div id="result"></div>
 
+    <script>
+        let results = [];
+
+        function startListening() {
+            const statusEl = document.getElementById("status");
+            const micBtn = document.getElementById("mic-btn");
+
+
+            fetch("/listen")
+                .then(res => res.json())
+                .then(data => {
+                    micBtn.classList.remove("active");
+
+                    if (data.status === "success") {
+                        statusEl.innerText = "✅ Done";
+                        statusEl.className = "status success";
+                        results.push(data.text);
+                    } else {
+                        statusEl.innerText = "❌ Error";
+                        statusEl.className = "status error";
+                        results.push(data.text);
+                    }
+
+                    renderResults();
+                })
+                .catch(err => {
+                    statusEl.innerText = "❌ Error";
+                    statusEl.className = "status error";
+                    micBtn.classList.remove("active");
+                });
+        }
+
+        function renderResults() {
+            const list = document.getElementById("result-list");
+            list.innerHTML = results.map((text, i) => `<div class="result-item">${i+1}. ${text}</div>`).join("");
+            list.scrollTop = list.scrollHeight;
+        }
+    </script>
     
 </body>
 </html>
