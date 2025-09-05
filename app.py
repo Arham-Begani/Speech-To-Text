@@ -13,7 +13,7 @@ def index():
 def listen():
     try:
         with sr.Microphone() as source:
-            r.adjust_for_ambient_noise(source, duration=0.2)  # faster ambient adjustment
+            r.adjust_for_ambient_noise(source, duration=0.4)  # faster ambient adjustment
             audio = r.listen(source, timeout=5, phrase_time_limit=5)  # limits time
 
             text = r.recognize_google(audio)
